@@ -1,7 +1,7 @@
 * {
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
@@ -15,19 +15,33 @@ body {
 
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+ 
 
     overflow: hidden;
+  
+   
 
 }
 
 .navbar {
 
     height: 60px;
+   
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 8px 74px 0 74px;
-    padding: 0 24px;
+    margin-top: 8px;
+ 
+    padding: 0 98px;
+    position: sticky;
+    top: 0px;
+    
+    background-color: #fff;
+   z-index: 2;
+  
 
 
 
@@ -185,6 +199,7 @@ body {
 }
 .section-2 .section-2__title {
     font-size: 1.7rem;
+    margin-top: 20px;
 }
 
 .section-2__btn-group {
@@ -294,6 +309,7 @@ body {
     border-radius: 50px;
     border: none;
     background-color: #84E9BD;
+    cursor: pointer;
 }
 
 .search-2__icon{
@@ -308,6 +324,7 @@ body {
 .search-2__icon img{
     width: 100%;
     aspect-ratio: 1;
+    cursor: pointer;
 }
 
 /* section-3 */
@@ -406,6 +423,12 @@ body {
     border-radius: 10px;
     position: relative;
     cursor: pointer;
+    position: relative;
+    /* background-color: forestgreen; */
+}
+
+.Heart-icon:hover{
+    color: red;
 }
 
 .section-5__image-group .section-5__image-group__image img {
@@ -536,6 +559,7 @@ body {
    align-items: center;
 justify-content: center;
 cursor: pointer;
+position: relative;
    
 
 }
@@ -676,6 +700,7 @@ cursor: pointer;
     display: none;
 }
 .section-12__s1__box-2__box{
+    position: relative;
     flex-basis: 20%;
     flex-grow: 1;
     min-width: 250px;
@@ -857,6 +882,31 @@ cursor: pointer;
 }
 
 
+/* heart icon */
+
+.Heart-icon{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:25px;
+    font-size: 20px;
+    height: 25px;
+    
+   
+    
+    top:10px;
+    right: 10px;
+    color: #fff;
+    
+  
+   
+   
+}
+img{
+    
+}
+
 
 
 
@@ -880,15 +930,19 @@ cursor: pointer;
 
 @media screen and (max-width:1250px) {
     .navbar,.section-2,.section-3,.section-4,.section-5,
-    .section-6,.section-7,.section-7,.section-8,.section-9,.section-10,.section-11,.section-12,.section-13 {
-       margin-left: 0;
-       margin-right: 0;
-    }
+    .section-6,.section-7,.section-7,.section-8,.section-9,.section-10,.section-11,.section-12,.section-13,.section-9__s1 {
+        margin-left: 0;
+        margin-right: 0;
+        
+    } 
 
 
 
 }
 @media screen and (max-width:765px) {
+    .navbar{
+        padding: 0 24px;
+    }
     .navbar__icon {
         display: block;
 
@@ -900,7 +954,7 @@ cursor: pointer;
         display: none;
     }
     .section-2{
-        margin-top: 0px;
+        margin-top: 20px;
     }
     .section-2__title{
         display: none;
@@ -912,7 +966,11 @@ cursor: pointer;
     }
     
     .section-2__search-input{
-        margin: 60px 0 20px;
+        width: 100%;
+        max-height: 700px;
+        margin: 80px 0 20px;
+        /* overflow: hidden; */
+        background-color: red;
 
     }
 
@@ -921,6 +979,7 @@ cursor: pointer;
         border-radius: 10px;
         padding: 0 20px 50px 40px;
         font-size: 16px;
+        overflow: hidden;
         
     }
     .search-2__btn{
@@ -939,13 +998,24 @@ cursor: pointer;
     }
     .input-boder{
         position: absolute;
-        width: 100%;
-        max-width: 88%;
-        top: 18px;
-        border-bottom: 1px solid;
+       
+       
+   
+        width: 68%;
+        top: 23px;
+        left: 40px;
+        
+       
+        display: flex;
+        justify-content: center;
+        padding: 0 20px 50px 40px;
+        border-top: 1.5px solid gray;
+        
     }
+   
     .section-3{
         padding: 0;
+        margin-top: 70px;
        
     }
     .section-3 img{
@@ -954,13 +1024,10 @@ cursor: pointer;
     .section-8{
         display: none;
     }
-    .section-9__s1 {
-        margin-left: 0;
-        margin-right: 0;
-        
-    }
+    
     .section-11{
         flex-direction: column;
+        padding: 0 24px;
     }
     .section-11__s2{
         text-align: start;

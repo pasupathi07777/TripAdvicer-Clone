@@ -552,6 +552,12 @@ body {
 .details {
     font-weight: 500;
 }
+.details__rating{
+    display: flex;
+
+}
+
+
 
 /* section-8 */
 
@@ -1014,8 +1020,13 @@ position: relative;
    
    
 }
-img{
-    
+
+/* rating icons */
+.star{
+    width:20px !important ;
+    height: 20px !important;
+    font-size: 20px;
+    margin: 5px 0;
 }
 
 

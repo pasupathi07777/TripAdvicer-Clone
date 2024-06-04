@@ -1071,6 +1071,7 @@ img{
         display: none;
     }
     .section-2__btn-group{
+        margin-top: 70px;
         width: 100%;
         overflow-x: auto;
         /* background-color: aqua; */

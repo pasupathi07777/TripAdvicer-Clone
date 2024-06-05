@@ -329,6 +329,9 @@ body {
     aspect-ratio: 1;
     cursor: pointer;
 }
+.btn-s2{
+    margin-right: 20px;
+}
 
 /* section-3 */
 .section-3 {
